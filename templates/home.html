@@ -1,0 +1,46 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+    <div class="alert alert-danger">{{ message }}</div>
+{% endif %}
+<style>
+body {
+    font-family: Cambria;
+    height: 100%;
+    background-image: linear-gradient(#d6446e, #f7a1b6); /* Couleurs pour la page d'accueil */
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1 {
+  text-align: center;
+}
+</style>
+<div class="container">
+    <div class="card card-body" style="border: 1px solid black; box-shadow: 0 0 10px black; background-color: #ffd1de">
+        <h1>Welcome to HOPE</h1>
+        <br>
+        <h2>Your Companion for Smart Disease Prediction</h2>
+        <p>HOPE is an intelligent platform designed to help you predict potential health conditions using advanced models. Our focus is on providing accurate, easy-to-use, and efficient tools to assist with early diagnosis and awareness of diseases.</p>
+        <br>
+        <h3>Available Predictions:</h3>
+        <ul>
+            <li><strong>Breast Cancer Detection</strong></li>
+        </ul>
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px; background-color: #f2b8cf">
+                <h4>Why Choose HOPE?</h4>
+                <p>Early detection is the key to successful treatment. Our models, such as the Breast Cancer Predictor, provide high accuracy to assist you in identifying potential health risks.</p>
+                <h5>Features:</h5>
+                <ul>
+                    <li>AI-powered disease prediction models</li>
+                    <li>User-friendly interface</li>
+                    <li>Accurate and reliable results</li>
+                    <li>Secure and confidential</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
